@@ -4,11 +4,9 @@ const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
-
+const render = require("./lib/htmlRenderer");
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
-
-const render = require("./lib/htmlRenderer");
 
 let employee = [];
 
@@ -31,7 +29,7 @@ const managerQuestions = [
     {
         type: "input",
         message: "What is office number?",
-        name: "officeNumber?",
+        name: "officeNumber",
     }
 ]
 
@@ -114,7 +112,7 @@ function newEmployee() {
                     break
                 case "no, finish adding":
                     // render html
-                    fs.writeFile("./output/team.html", render(employee), (err) =>
+                    fs.writeFile(outputPath, render(employee), (err) =>
                         err ? console.error(err) : console.log("Team summary is generated")
                     )
                     break
@@ -129,7 +127,7 @@ function addEngineer() {
                 response.name,
                 response.id,
                 response.email,
-                response.gitHub
+                response.github
             )
             employee.push(engineer)
             newEmployee()
