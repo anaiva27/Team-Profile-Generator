@@ -1,0 +1,32 @@
+/* styles for the body and headers*/
+body {
+    background-image: url(https://media.istockphoto.com/vectors/abstract-vector-white-and-gray-subtle-lattice-pattern-background-vector-id1138069810?k=6&m=1138069810&s=612x612&w=0&h=xdJQH5DpZrA_5CfVx502oQ1_c6ppnaHtfVBjWNqb4KQ=);
+  }
+
+h1, h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.jumbotron {
+    background-color: #b1d9ee;
+}
+
+/* styles for the cards*/
+.employee-card {
+    box-shadow: 5px 5px 5px grey;
+    margin: 10px;
+    width: 25vw;
+}
+
+.team-area {
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+.card-header {
+    background-color: #b0ebe2;
+}
+
+.card-body {
+    background-color: #e7e9ec;
+}
