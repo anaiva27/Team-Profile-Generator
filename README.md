@@ -1,6 +1,7 @@
-Walkthrough video link https://drive.google.com/file/d/1qao8jCBsQjsK3tkUvgGz07jr-DfGq_C1/view
+Walkthrough video link https://drive.google.com/file/d/1oZhhLs464HN7AWCFYgNI0LUCLZP-_GEY/view
 <br>
-Youtube https://www.youtube.com/watch?v=9b8An9X4pvQ
+Youtube https://youtu.be/zSfu7BwnBZc
+
 
 # Team-Profile-Generator
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
