@@ -93,7 +93,7 @@ const employeeQuestion = [
     }
 ]
 
-// functions prompts manager to add his own info and then initiate the prompts for the employees
+// functions to prompt the manager to add his own info and then initiate the prompts for the employees
 function askManager() {
     inquirer.prompt(managerQuestions)
         .then((response) => {
