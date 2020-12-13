@@ -28,7 +28,7 @@ npm i
 
 ## Usage 
 
-The user can easily invoke this application by opening the index.js file in the Node command line by typing `node index.js`. Then the user(manager) will be prompted with a series of questions about his id, name and some personal information inside the command line. After the questions have been answered, the manager will get an option to add more employees(engineers or interns) or finish adding. If the last option has been chosen, the manager will get a confirmation message `"Team summary has been generated"`. The file will be located in the folder `Output` and will be named `Team.html`.<br>
+The user can invoke this application by opening the app.js file in the Node command line by typing `node app.js`. Then the user(manager) will be prompted with a series of questions about his id, name and some personal information inside the command line. After the questions have been answered, the manager will get an option to add more employees(engineers or interns) or finish adding. If the last option has been chosen, the manager will get a confirmation message `"Team summary has been generated"`. The file will be located in the folder `Output` and will be named `Team.html`.<br>
 The profile page can be opened in a browser window and has been styled accordingly to a chosen theme, that can be changed by editing the file `style.css` located in the same folder. 
 The files containing classes with the info about the employees (name, email, id, school, GitHub name etc), that needs to be collected, are located in the folder `lib` in the root directory, can be easily modified, if needed. 
 <br><br>
