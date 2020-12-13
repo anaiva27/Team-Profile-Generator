@@ -1,3 +1,4 @@
+// require dependencies and routes to the files
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
@@ -6,8 +7,9 @@ const path = require("path");
 const fs = require("fs");
 const render = require("./lib/htmlRenderer");
 const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const outputPath = path.join(OUTPUT_DIR, "Team.html");
 
+// arrays of all questions and empty array to push the answers into
 let employee = [];
 
 const managerQuestions = [
@@ -91,6 +93,7 @@ const employeeQuestion = [
     }
 ]
 
+// functions prompts manager to add his own info and then initiate the prompts for the employees
 function askManager() {
     inquirer.prompt(managerQuestions)
         .then((response) => {
@@ -113,13 +116,14 @@ function newEmployee() {
                 case "no, finish adding":
                     // render html
                     fs.writeFile(outputPath, render(employee), (err) =>
-                        err ? console.error(err) : console.log("Team summary is generated")
+                        err ? console.error(err) : console.log("Team summary has been generated")
                     )
                     break
             }
         })
 }
 
+// prompts for engineer
 function addEngineer() {
     inquirer.prompt(engineerQuestions)
         .then((response) => {
@@ -135,6 +139,7 @@ function addEngineer() {
         
 }
 
+// prompts for intern
 function addIntern() {
     inquirer.prompt(internQuestions)
         .then((response) => {
@@ -149,4 +154,5 @@ function addIntern() {
         })
 }
 
+// invoke the manager function to initiate the app
 askManager()
